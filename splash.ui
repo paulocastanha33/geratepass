@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>557</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GeratePass V.1.0</string>
+  </property>
+  <property name="windowOpacity">
+   <double>-8.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #323232;
+border-radius:12px;
+border:2px solid yellowgreen;
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="generateButton">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>292</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+width: 98%;
+padding: 10px;
+border-color:black;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid #ADFF2F;
+background-color: #323232;
+color: white;
+font-family: 'Orbitron', sans-serif;
+}
+QPushButton:hover{
+	background-color:#ADFF2F;
+    color:black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>GERAR </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:30px, bold;
+color: white;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="uppercaseCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>98</y>
+      <width>160</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#323232;
+color:lime;
+border:none;
+</string>
+    </property>
+    <property name="text">
+     <string>Incluir Letras Maiúsculas</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="lengthSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>373</x>
+      <y>230</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+background-color: white;
+border-color: rgb(26, 95, 180);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>202</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;
+color: rgb(246, 97, 81);
+border:none;
+background-color: #323232;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tamanho Senha:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="lowercaseCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>124</y>
+      <width>170</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #323232;
+color:yellow;
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>Incluir Letras Minúsculas</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="digitsCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>150</y>
+      <width>110</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #323232;
+color:violet;
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>Incluir Digitos</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="symbolsCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>173</y>
+      <width>120</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #323232;
+color:white;
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>Incluir Simbolos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearButton">
+    <property name="geometry">
+     <rect>
+      <x>167</x>
+      <y>292</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+width: 98%;
+padding: 10px;
+border-color:black;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid orange;
+background-color: #323232;
+color: white;
+font-family: 'Orbitron', sans-serif;
+}
+QPushButton:hover{
+	background-color: orange;
+    color:black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>LIMPAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="copyButton">
+    <property name="geometry">
+     <rect>
+      <x>277</x>
+      <y>292</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+width: 98%;
+padding: 10px;
+border-color:black;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid cyan;
+background-color: #323232;
+color: white;
+font-family: 'Orbitron', sans-serif;
+}
+QPushButton:hover{
+	background-color: cyan;
+    color:black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>COPIAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>383</x>
+      <y>292</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+width: 98%;
+padding: 10px;
+border-color:black;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid #00FF00;
+background-color: #323232;
+color: white;
+font-family: 'Orbitron', sans-serif;
+}
+QPushButton:hover{
+	background-color: #00FF00;
+    color:black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>SAIR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>30</y>
+      <width>331</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+color:#00ff00;
+background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;Gerador De Senhas Aleatórias&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>84</y>
+      <width>211</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #323232;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="copyMessageLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+color: lime;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>generateButton</zorder>
+   <zorder>passwordLineEdit</zorder>
+   <zorder>uppercaseCheckBox</zorder>
+   <zorder>lengthSpinBox</zorder>
+   <zorder>label</zorder>
+   <zorder>lowercaseCheckBox</zorder>
+   <zorder>digitsCheckBox</zorder>
+   <zorder>symbolsCheckBox</zorder>
+   <zorder>clearButton</zorder>
+   <zorder>copyButton</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>copyMessageLabel</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Scripts_python/protosystem/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
